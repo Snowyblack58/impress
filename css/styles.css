@@ -8,12 +8,33 @@ html, body {
 .step {
     text-align: center;
     border-radius: 10px;
-    width: 512px;
+    width: 1024px;
     transition: opacity 0.5s;
+}
+
+.present {
+	opacity: 0.9;
 }
 
 .past, .future {
     opacity: 0.5;
+}
+
+.flatred {
+	color: #F43;
+}
+
+.key {
+	background: #333;
+}
+
+.code {
+	font-family: monospace;
+	font-size: 20px;
+	text-align: left;
+	opacity: 0.99;
+	padding: 35px;
+	background: #111;
 }
 
 #over b{
@@ -58,4 +79,14 @@ html, body {
     -ms-transition-delay: 0.75s;
     -o-transition-delay: 0.75s;
     transition-delay: 0.75s; 
+}
+
+#download-screenshot {
+	width: 1024px;
+}
+
+#demo-img {
+	width: 1024px;
+	border: solid 5px #FFF;
+	border-radius: 2px;
 }
