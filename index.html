@@ -10,31 +10,114 @@
 	<body>
         <div id="impress">
             <div id="start" class="step">
+				<!--
+				Does anybody like PowerPoint animations? Yeah, me neither.
+				Luckily for us, there are more options now than just PowerPoint.
+				And Impress.JS is by far the most powerful alternative.
+				-->
                 <h1>Impress.JS</h1>
                 <p style="font-size:30px">David Zhao</p>
             </div>
             
-            <div id="what">
-            
+            <div id="what" class="step" data-x="1500">
+				<!--
+				So, what is Impress.JS exactly?
+				Impress.JS is a javascript library that simplifies linear-style
+				webpages.
+				-->
+            	<h2><span class="flatred">What</span> is Impress.JS?</h2>
             </div>
             
-            <div id="control" class="step" data-x="1500" >
-                <p>Except I have much more <h2>CONTROL</h2></p>
+            <div id="prezi" class="step" data-x="1500" data-y="1500">
+				<!--
+				It's like Prezi where you can place text or pictures and the
+				Prezi software will automatically code the transition for you.
+				However, despite Prezi's popularity as the "cool" PowerPoint,
+				it has a relatively small set of tools. So, it's like Prezi...
+				-->
+            	<p>It's like Prezi...</p>
+            </div>
+            
+            <div id="control" class="step" data-x="1500" data-y="3000" >
+				<!--
+				...except you have much more control. Since Impress.JS is
+				Javascript-based, you can mess around with...
+				-->
+                <p>...except you have much more <h2 class="flatred">CONTROL</h2></p>
             </div>
         
-            <div id="over" class="step" data-x="3000" >
+            <div id="over" class="step" data-x="1500" data-y="4500" >
+				<!--
+				...transition effects such as position, rotation, and scale.
+				You can change opacity. You can insert images or links.
+				Pretty much, you are limited only by the abilities of Javascript.
+				Unlike Prezi, you have complete control over all these
+				different attributes and their styling. As you saw in this slide,
+				you can add timed animations or CSS transitions. Oh, and by the way,
+				-->
                 <p>
-                    over transition effects:
+                    over transition effects:<br>
                     <b class="position">position</b>,
                     <b class="rotation">rotation</b>,
-                    and
-                    <b class="scale">scale</b>
+                    <b class="scale">scale</b>, etc.
                 </p>
             </div>
         
-            <div id="3d" class="step" data-x="4500" data-z="0" data-rotate-x="30" data-rotate-y="30"data-rotate-z="-30">
-                <p>Oh, by the way, this is 3D.</p>
+            <div id="DDD" class="step" data-x="1500" data-y="4500" data-z="4000" data-rotate-x="-20" data-rotate-y="30"data-rotate-z="-20">
+				<!--
+				It's 3D.
+				-->
+                <p>It's 3D.</p>
             </div>
+		
+			<div id="ynaught" class="step" data-x="3000">
+            	<h2><span class="flatred">Why</span> use Impress.JS?</h2>
+			</div>
+		
+			<div id="simplyslick" class="step" data-x="3000" data-y="1500">
+				<!--
+				It's slick and simple. Impress.JS definitely gives you
+				a more tech-savvy feel to the presentation. It provides
+				that visual appeal that PowerPoint slides can't. Also,
+				as I'll show you in a minute, Impress.JS is incredibly
+				easy to implement.
+				-->
+				<h2><span class="flatred">SLICK</span> and <span class="flatred">SIMPLE</span></h2>	
+			</div>
+		
+			<div id="how" class="step wheel" data-x="4500">
+				<h2><span class="flatred">How</span> do you use Impress.JS?</h2>
+			</div>
+		
+			<div id="pull" class="step wheel" data-x="5000" data-z="-1000" data-rotate-y="90">
+				<h3><span class="flatred">https://goo.gl/R833nc</span></h3>
+				<img id="download-screenshot" src="http://i.imgur.com/YAGZ2yL.png?1"></img>
+			</div>
+		
+			<div id="code" class="step code" data-x="4500" data-z="-2000" data-rotate-y="180">
+				<code>
+<pre>&#60!DOCTYPE html&#62
+&#60html&#62
+	&#60head&#62...&#60/head&#62
+	&#60body&#62
+		&#60script type="text/javascript" src="js/impress.js"&#62&#60/script&#62
+	&#60/body&#62
+&#60/html&#62</pre></code>
+			</div>
+	
+			<div id="code-1" class="step code" data-x="4500" data-z="-3500" data-rotate-y="180">
+				<code>
+<pre>&#60!DOCTYPE html&#62
+&#60html&#62
+	&#60head&#62...&#60/head&#62
+	&#60body&#62
+		<span class="flatred">&#60div id="impress"&#62
+		
+		&#60/div&#62</span>
+		&#60script type="text/javascript" src="js/impress.js"&#62&#60/script&#62
+	&#60/body&#62
+&#60/html&#62</pre></code>
+			</div>
         </div>
         <script type="text/javascript" src="js/impress.js"></script>
         <script type="text/javascript">impress().init();</script>
