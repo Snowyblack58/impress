@@ -9,7 +9,7 @@
 	</head>
 	<body>
         <div id="impress">
-            <div id="start" class="step">
+            <div id="start" class="step key">
 				<!--
 				Does anybody like PowerPoint animations? Yeah, me neither.
 				Luckily for us, there are more options now than just PowerPoint.
@@ -19,7 +19,7 @@
                 <p style="font-size:30px">David Zhao</p>
             </div>
             
-            <div id="what" class="step" data-x="1500">
+            <div id="what" class="step key" data-x="1500">
 				<!--
 				So, what is Impress.JS exactly?
 				Impress.JS is a javascript library that simplifies linear-style
@@ -70,7 +70,7 @@
                 <p>It's 3D.</p>
             </div>
 		
-			<div id="ynaught" class="step" data-x="3000">
+			<div id="ynaught" class="step key" data-x="3000">
             	<h2><span class="flatred">Why</span> use Impress.JS?</h2>
 			</div>
 		
@@ -85,16 +85,16 @@
 				<h2><span class="flatred">SLICK</span> and <span class="flatred">SIMPLE</span></h2>	
 			</div>
 		
-			<div id="how" class="step wheel" data-x="4500">
+			<div id="how" class="step key" data-x="4500">
 				<h2><span class="flatred">How</span> do you use Impress.JS?</h2>
 			</div>
 		
-			<div id="pull" class="step wheel" data-x="5000" data-z="-1000" data-rotate-y="90">
+			<div id="pull" class="step wheel" data-x="4500" data-y="1500">
 				<h3><span class="flatred">https://goo.gl/R833nc</span></h3>
 				<img id="download-screenshot" src="http://i.imgur.com/YAGZ2yL.png?1"></img>
 			</div>
 		
-			<div id="code" class="step code" data-x="4500" data-z="-2000" data-rotate-y="180">
+			<div id="code" class="step code" data-x="4500" data-y="3000">
 				<code>
 <pre>&#60!DOCTYPE html&#62
 &#60html&#62
@@ -105,11 +105,11 @@
 &#60/html&#62</pre></code>
 			</div>
 	
-			<div id="code-1" class="step code" data-x="4500" data-z="-3500" data-rotate-y="180">
+			<div id="code-1" class="step code" data-x="5000" data-y="3250" data-z="1000" data-rotate-y="-10">
 				<code>
 <pre>&#60!DOCTYPE html&#62
 &#60html&#62
-	&#60head&#62...&#60/head&#62
+	&#60head&#62...&#60/head&#62	
 	&#60body&#62
 		<span class="flatred">&#60div id="impress"&#62
 		
@@ -117,6 +117,66 @@
 		&#60script type="text/javascript" src="js/impress.js"&#62&#60/script&#62
 	&#60/body&#62
 &#60/html&#62</pre></code>
+			</div>
+	
+			<div id="code-2" class="step code" data-x="5500" data-y="3500" data-z="2000" data-rotate-y="-20">
+				<code>
+<pre>&#60!DOCTYPE html&#62
+&#60html&#62
+	&#60head&#62...&#60/head&#62
+	&#60body&#62
+		&#60div id="impress"&#62
+		
+		&#60/div&#62
+        &#60script type="text/javascript" src="js/impress.js"&#62&#60/script&#62
+        <span class="flatred">&#60script type="text/javascript"&#62impress().init();&#60/script&#62</span>
+    &#60/body&#62
+&#60/html&#62</pre></code>
+			</div>
+	
+			<div id="code-3" class="step code" data-x="6000" data-y="3750" data-z="3000" data-rotate-y="-30">
+				<code>
+<pre>&#60!DOCTYPE html&#62
+&#60html&#62
+	&#60head&#62...&#60/head&#62
+	&#60body&#62
+		&#60div id="impress"&#62
+			<span class="flatred">&#60div class="step"&#62
+                		&#60h1&#62Hello?&#60/h1&#62
+			&#60/div&#62</span>
+		&#60/div&#62
+        &#60script type="text/javascript" src="js/impress.js"&#62&#60/script&#62
+        &#60script type="text/javascript"&#62impress().init();&#60/script&#62
+    &#60/body&#62
+&#60/html&#62</pre></code>
+			</div>
+	
+			<div id="code-4" class="step code" data-x="6500" data-y="4000" data-z="4000" data-rotate-y="-40">
+				<code>
+<pre>&#60!DOCTYPE html&#62
+&#60html&#62
+	&#60head&#62...&#60/head&#62
+	&#60body&#62
+		&#60div id="impress"&#62
+			&#60div class="step"&#62
+                		&#60h1&#62Hello?&#60/h1&#62
+			&#60/div&#62
+			<span class="flatred">&#60div class="step" data-x="1000" data-rotate-y="50"&#62
+                		&#60h1&#62Is it me you're looking for?&#60/h1&#62
+			&#60/div&#62</span>
+		&#60/div&#62
+        &#60script type="text/javascript" src="js/impress.js"&#62&#60/script&#62
+        &#60script type="text/javascript"&#62impress().init();&#60/script&#62
+    &#60/body&#62
+&#60/html&#62</pre></code>
+			</div>
+	
+			<div id="demo" class="step" data-x="7000" data-y="4500" data-z="5000" data-rotate-y="-50">
+				<img id="demo-img" src="http://i.imgur.com/nfUpmfa.png">
+			</div>
+	
+			<div id="conclusion" class="step" data-x="3500" data-y="-2000" data-z="7500" data-rotate-x="30">
+				<h1>Questions?</h1>
 			</div>
         </div>
         <script type="text/javascript" src="js/impress.js"></script>
